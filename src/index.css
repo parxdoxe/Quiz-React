@@ -1,13 +1,89 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardQuiz {
+  border-radius: 20px;
+  width: 50%;
+  height: 200px;
+  color: black;
+  padding: 10px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  padding: 10px;
+  width: 30%;
+  font-size: 1.3rem;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.answer button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+}
+
+.answer button:hover {
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.current {
+  width: 17%;
+  padding: 10px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.result button {
+  width: 30%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+}
+
+.result button:hover {
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  border: 0;
+  cursor: pointer;
 }
